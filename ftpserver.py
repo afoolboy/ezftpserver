@@ -37,7 +37,7 @@ if options.port:
 
 
 authorizer = DummyAuthorizer()
-authorizer.add_user(default_username, default_password, default_homedir)
+authorizer.add_user(default_username, default_password, default_homedir,'elradfmwM')
 handler = FTPHandler
 handler.authorizer = authorizer
 server = FTPServer(("0.0.0.0",default_port), handler)
