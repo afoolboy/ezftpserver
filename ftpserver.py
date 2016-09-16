@@ -20,7 +20,7 @@ default_password = "123456"
 default_homedir = "."
 default_port = 21 
 
-print options
+#print options
 
 if options.username:
 	default_username=options.username
@@ -35,6 +35,9 @@ if options.port:
 	default_port=options.port
 
 
+print "---------------------------------------------------------"
+print "[+] Please login with (%s:%s) && ftp_port is (%s)"%(default_username,default_password,default_port)
+print "---------------------------------------------------------"
 
 authorizer = DummyAuthorizer()
 authorizer.add_user(default_username, default_password, default_homedir,'elradfmwM')
